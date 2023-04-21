@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Head -->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+
+    <title>Pasaporte Salud | App Farmacias</title>
+</head>
+
+<!-- Body -->
+<body class="psApp-dctos">
+    <!-- Header -->
+    <header class="psApp-dctos-header">
+        <div class="psApp-container">
+            <div class="psApp-dctos-header-menu">
+                <i class="fa-solid fa-bars"></i>
+                <div class="psApp-dctos-header-menu-wrapper">
+                    <span class="psApp-dctos-header-menu-wrapper-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </span>
+                    <div class="psApp-dctos-header-menu-wrapper-content">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="psApp-dctos-header-menu-icon">
+                                        <i class="fa-solid fa-percent"></i>
+                                    </span>
+                                    <span class="psApp-dctos-header-menu-item">Descuentos</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="psApp-dctos-header-menu-icon">
+                                        <i class="fa-solid fa-rotate-right"></i>
+                                    </span>
+                                    <span class="psApp-dctos-header-menu-item">Reversa de quema de descuento</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <button>
+                            <span class="psApp-dctos-header-menu-iconLogout">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            </span>
+                            <span class="psApp-dctos-header-menu-txtLogout">Cerrar sesión</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="psApp-dctos-header-logo">
+                <img src="assets/img/psApp-logo.png" alt="Pasaporte Salud App Logo">
+            </div>
+            <div class="psApp-dctos-header-user">
+                <span class="psApp-dctos-header-user-firstName">M</span>
+                <span class="psApp-dctos-header-user-lastName">P</span>
+            </div>
+        </div>
+    </header>
+    <!-- Fin Header -->
+
+    <!-- Main -->
+    <main class="psApp-dctos-main">
+        <div class="psApp-container">
+            <!-- Descuentos Text -->
+            <div class="psApp-dctos-txt">
+                <h2 class="psApp-title">Descuentos</h2>
+                <p>Para comenzar un descuento ingrese RUT de paciente</p>
+            </div>
+            <!-- Descuentos Form -->
+            <form class="psApp-dctos-formRut" action="" name="" method="">
+                <!-- Descuentos Form - RUT -->
+                <fieldset class="psApp-dctos-formRut-fieldset psApp-dctos-formRut-fieldsetRut">
+                    <label class="psApp-dctos-form-fieldset-label" for="dctosForm-rut">Rut</label>
+                    <input class="psApp-dctos-form-fieldset-inputRut wrong" type="text" name="" id="dctosForm-rut" placeholder="Ingrese RUT sin puntos con guión">
+                    <span class="psApp-dctos-form-state wrong">Ingresa RUT válido</span>
+                </fieldset>
+                <!-- Descuentos Form - Submit -->
+                <fieldset class="psApp-dctos-formRut-fieldset psApp-dctos-formRut-fieldsetSubmit">
+                    <input class="psApp-home-welcome-main-form-fieldset-inputSubmit" id="dctosForm-submit" type="submit" value="Siguiente">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <!-- Fin Main -->
+
+    <!-- Scripts  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="/assets/js/slick.min.js"></script>
+    <script type="text/javascript" src="/assets/js/script.js"></script>
+
+</body>
+
+</html>

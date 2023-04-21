@@ -1,0 +1,397 @@
+/* Variables */
+:root {
+    --main-txt-color         : #333;
+    --sec-txt-color          : #b7b7b7;
+    --main-invert-color      : #717171;
+    --sec-invert-color       : #e6e6e6;
+    --main-action-color      : #3258a4;
+    --main-action-color-hover: #193b7e;
+    --sec-action-color       : #3ba4dd;
+    --ok-color               : #d4edda;
+    --warn-color             : #fbdfa0;
+    --stop-color             : #ff5252;
+    --fontsize-small         : 12px;
+    --fontsize-normal        : 14px;
+    --fontsize-title        : 16px;
+    --transition             : all .3s ease-in-out;
+}
+
+/* Estilos generales */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family           : "Rubik", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing   : antialiased;
+    -o-font-smoothing     : antialiased;
+    color                 : var(--main-txt-color);
+    font-size             : var(--fontsize-normal);
+    font-weight           : 400;
+}
+.psApp-title {
+    font-size: var(--fontsize-title);
+    color: var(--main-txt-color);
+    font-weight: 700;
+}
+input.wrong {
+    border: 2px solid var(--stop-color) !important;
+}
+span.wrong {
+    color: var(--stop-color);
+}
+
+
+/* Contenedores */
+.psApp-container {
+    width : 80%;
+    margin: 0 auto;
+}
+
+
+
+/* ----------  WELCOME ---------- */
+
+/* Welcome Form */
+.psApp-home-welcome {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    height         : 100vh;
+}
+
+/* Welcome Form  -  Header */
+.psApp-home-welcome .psApp-home-welcome-header {
+    width: 100%;
+    text-align: center;
+}
+.psApp-home-welcome .psApp-home-welcome-header .psApp-container {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    margin-bottom  : 2rem;
+}
+.psApp-home-welcome .psApp-home-welcome-header .psApp-container img {
+    width        : 150px;
+    max-width    : 150px;
+    display      : block;
+    margin-bottom: 1rem;
+}
+
+/* Welcome Form  -  Main */
+.psApp-home-welcome .psApp-home-welcome-main {
+    width: 100%;
+}
+
+/* Welcome Form  -  Main  -  Form */
+.psApp-home-welcome-main-form {
+    display       : flex;
+    flex-direction: column;
+    width         : 100%;
+}
+.psApp-home-welcome .psApp-home-welcome-main-form-fieldset {
+    display       : flex;
+    flex-direction: column;
+    margin-bottom : 1.3rem;
+}
+.psApp-home-welcome .psApp-home-welcome-main-form-fieldset label {
+    display      : block;
+    margin-bottom: .3rem;
+    font-weight: 700;
+}
+.psApp-home-welcome .psApp-home-welcome-main-form-fieldset label span {
+    font-size  : var(--fontsize-small);
+    color      : var(--sec-txt-color);
+    display    : inline-block;
+    margin-left: 5px;
+}
+.psApp-home-welcome .psApp-home-welcome-main-form-fieldset input {
+    height       : 45px;
+    border       : 2px solid var(--sec-txt-color);
+    border-radius: 6px;
+    padding      : 0 1rem;
+    font-size    : var(--fontsize-small);
+    font-weight  : 600;
+}
+.psApp-home-welcome .psApp-home-welcome-main-form-fieldset input:focus {
+    border: 2px solid var(--main-action-color);
+}
+.psApp-home-welcome .psApp-home-welcome-main-form-fieldset input::placeholder {
+    color      : var(--sec-txt-color);
+    font-weight: 600;
+}
+.psApp-home-welcome .psApp-home-welcome-main-form-state {
+    font-size : var(--fontsize-small);
+    margin-top: .3rem;
+}
+.psApp-home-welcome-main-form .psApp-fieldset-sub {
+    margin-bottom  : 0;
+    margin-top     : 1rem;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+}
+.psApp-home-welcome-main-form .psApp-fieldset-pass {
+    position: relative;
+}
+.psApp-home-welcome-main-form .psApp-fieldset-pass .fa-eye {
+    position: absolute;
+    top: 43%;
+    right: 1rem;
+    cursor: pointer;
+    color: var(--sec-txt-color);
+}
+.psApp-home-welcome .psApp-home-welcome-main-form-fieldset input[type="submit"] {
+    background-color: var(--main-action-color);
+    color           : #fff;
+    border          : 0;
+    font-size       : var(--fontsize-normal);
+    width           : fit-content;
+    padding-inline  : 3.5rem;
+    display         : inline-block;
+    margin-bottom   : 1rem;
+    cursor          : pointer;
+    transition      : var(--transition);
+}
+.psApp-home-welcome .psApp-home-welcome-main-form-fieldset input[type="submit"]:hover,
+.psApp-home-welcome .psApp-home-welcome-main-form-fieldset input[type="submit"]:active,
+.psApp-home-welcome .psApp-home-welcome-main-form-fieldset input[type="submit"]:focus {
+    background-color: var(--main-action-color-hover);
+}
+.psApp-home-welcome-main-form .psApp-fieldset-sub button {
+    font-size       : var(--fontsize-small);
+    border          : 0;
+    background-color: transparent;
+    line-height     : 1;
+    font-weight     : 600;
+    cursor          : pointer;
+    transition      : var(--transition);
+}
+.psApp-home-welcome-main-form .psApp-fieldset-sub button:hover,
+.psApp-home-welcome-main-form .psApp-fieldset-sub button:active,
+.psApp-home-welcome-main-form .psApp-fieldset-sub button:focus {
+    opacity   : .7;
+    transition: var(--transition);
+}
+
+/* ----------  FIN WELCOME ---------- */
+
+
+/* ----------  HOME ---------- */
+
+/* Descuentos Form - Header */
+.psApp-dctos .psApp-dctos-header {
+    box-shadow: 0 2px 4px 0 rgb(183 183 183 / 20%);
+    padding: 1rem 0;
+}
+.psApp-dctos .psApp-dctos-header > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Descuentos Form - Header - Menu */
+.psApp-dctos .psApp-dctos-header-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: var(--transition);
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    margin-left: -10px;
+}
+.psApp-dctos .psApp-dctos-header-menu:hover {
+    background-color: var(--sec-invert-color);
+    transition: var(--transition);
+}
+.psApp-dctos .psApp-dctos-header-menu > i {
+    font-size: 25px;
+    color: var(--sec-txt-color);
+    transition: var(--transition);
+}
+.psApp-dctos .psApp-dctos-header-menu .psApp-dctos-header-menu-wrapper {
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px 0 var(--sec-txt-color);
+}
+.psApp-dctos .psApp-dctos-header-menu .psApp-dctos-header-menu-wrapper-close {
+    margin-bottom: 2rem;
+    display: block;
+}
+.psApp-dctos .psApp-dctos-header-menu .psApp-dctos-header-menu-wrapper-close i {
+    font-size: 25px;
+    color: var(--sec-txt-color);
+}
+.psApp-dctos .psApp-dctos-header-menu .psApp-dctos-header-menu-wrapper-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: calc(100vh - 6.5rem);
+}
+.psApp-dctos .psApp-dctos-header-menu .psApp-dctos-header-menu-wrapper-content ul li a {
+    display: flex;
+    padding: .5rem 0;
+    text-decoration: none;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.psApp-dctos .psApp-dctos-header-menu .psApp-dctos-header-menu-wrapper-content ul li a span {
+    display: inline-block;
+}
+.psApp-dctos .psApp-dctos-header-menu .psApp-dctos-header-menu-wrapper-content button {
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.psApp-dctos .psApp-dctos-header-menu .psApp-dctos-header-menu-wrapper-content button:hover,
+.psApp-dctos .psApp-dctos-header-menu .psApp-dctos-header-menu-wrapper-content button:focus,
+.psApp-dctos .psApp-dctos-header-menu .psApp-dctos-header-menu-wrapper-content button:active {
+    transition: var(--transition);
+    opacity: .7;
+} 
+.psApp-dctos .psApp-dctos-header-menu .psApp-dctos-header-menu-wrapper-content .psApp-dctos-header-menu-iconLogout i {
+    font-size: 20px;
+    color: var(--sec-txt-color);
+    display: inline-block;
+    margin-right: .5rem;
+}
+.psApp-dctos .psApp-dctos-header-menu .psApp-dctos-header-menu-wrapper-content .psApp-dctos-header-menu-txtLogout {
+    color: var(--sec-txt-color);;
+    font-weight: 700;
+    margin-top: -2px;
+}
+.psApp-dctos .psApp-dctos-header-menu .psApp-dctos-header-menu-item {
+    font-size: var(--fontsize-normal);
+    color: var(--main-txt-color);
+    font-weight: 700;
+    margin-left: .7rem;
+    line-height: 1.3;
+}
+
+.psApp-dctos .psApp-dctos-header-menu .psApp-dctos-header-menu-icon {
+    font-size: 20px;
+    width: 20px;
+    color: var(--sec-action-color);
+}
+
+/* Descuentos Form - Header - Logo */
+.psApp-dctos .psApp-dctos-header-logo img {
+    width: 120px;
+    max-width: 150px;
+}
+/* Descuentos Form - Header - User */
+.psApp-dctos .psApp-dctos-header-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: var(--transition);
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    margin-right: -10px;
+    background-color: var(--sec-invert-color);
+    border: 1px solid var(--sec-invert-color);
+}
+.psApp-dctos .psApp-dctos-header-user:hover {
+    opacity: .7;
+    border: 1px solid var(--sec-txt-color);
+}
+.psApp-dctos .psApp-dctos-header-user span {
+    color: var(--sec-txt-color);
+    text-transform: uppercase;
+}
+/* Descuentos Form - Title */
+.psApp-dctos .psApp-dctos-main .psApp-dctos-txt {
+    margin: 2rem 0;
+}
+.psApp-dctos .psApp-dctos-main .psApp-dctos-txt h2 {
+    text-align: center;
+    margin-bottom: .5rem;
+}
+.psApp-dctos .psApp-dctos-main .psApp-dctos-txt p {
+    font-weight: 400;
+    text-align: center;
+}
+/* Descuentos Form - Form */
+.psApp-dctos .psApp-dctos-main .psApp-dctos-formRut-fieldset {
+    display       : flex;
+    flex-direction: column;
+    margin-bottom : 1.3rem;
+}
+.psApp-dctos .psApp-dctos-main .psApp-dctos-formRut-fieldset label {
+    display      : block;
+    margin-bottom: .3rem;
+    font-weight: 700;
+}
+.psApp-dctos .psApp-dctos-main .psApp-dctos-formRut-fieldset label span {
+    font-size  : var(--fontsize-small);
+    color      : var(--sec-txt-color);
+    display    : inline-block;
+    margin-left: 5px;
+}
+.psApp-dctos .psApp-dctos-main .psApp-dctos-formRut-fieldsetRut {
+    margin-bottom: 3rem;
+}
+.psApp-dctos .psApp-dctos-main .psApp-dctos-formRut-fieldset input {
+    height       : 45px;
+    border       : 2px solid var(--sec-txt-color);
+    border-radius: 6px;
+    padding      : 0 1rem;
+    font-size    : var(--fontsize-small);
+    font-weight  : 600;
+}
+.psApp-dctos .psApp-dctos-main .psApp-dctos-formRut-fieldset input:focus {
+    border: 2px solid var(--main-action-color);
+}
+.psApp-dctos .psApp-dctos-main .psApp-dctos-formRut-fieldset input::placeholder {
+    color      : var(--sec-txt-color);
+    font-weight: 600;
+}
+.psApp-dctos .psApp-dctos-main .psApp-dctos-form-state {
+    font-size : var(--fontsize-small);
+    margin-top: .3rem;
+}
+.psApp-dctos .psApp-dctos-main .psApp-dctos-formRut-fieldsetSubmit {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.psApp-dctos .psApp-dctos-main .psApp-dctos-formRut-fieldset input[type="submit"] {
+    background-color: var(--sec-invert-color);
+    color           : var(--main-invert-color);
+    border          : 0;
+    font-size       : var(--fontsize-normal);
+    width           : fit-content;
+    padding-inline  : 3.5rem;
+    display         : inline-block;
+    cursor          : pointer;
+    transition      : var(--transition);
+    box-shadow:  3px 3px 6px 0 #96969680;
+}
+.psApp-dctos .psApp-dctos-main .psApp-dctos-formRut-fieldset input[type="submit"]:hover,
+.psApp-dctos .psApp-dctos-main .psApp-dctos-formRut-fieldset input[type="submit"]:active,
+.psApp-dctos .psApp-dctos-main .psApp-dctos-formRut-fieldset input[type="submit"]:focus {
+    background-color: var(--main-action-color-hover);
+    color: #fff;
+}
+
+/* ----------  FIN HOME ---------- */

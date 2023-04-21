@@ -1,2 +1,75 @@
-<div>
-</div>
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Head -->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></link>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+
+    <title>Pasaporte Salud | App Farmacias</title>
+</head>
+
+<!-- Body -->
+<body class="psApp-home psApp-home-welcome">
+    <!-- Header Bienvenida -->
+    <header class="psApp-home-welcome-header">
+        <div class="psApp-container">
+            <img src="assets/img/psApp-logo.png" alt="Pasaporte Salud App Logo">
+            <h2 class="psApp-home-welcome-header psApp-title">¡Bienvenido!</h2>
+        </div>
+    </header>
+    <!-- Fin Header Bienvenida -->
+
+    <!-- Main -->
+    <main class="psApp-home-welcome-main">
+        <div class="psApp-container">
+            <!-- Welcome Form -->
+            <form class="psApp-home-welcome-main-form" action="" name="" method="">
+                <!-- Welcome Form - Rut -->
+                <fieldset class="psApp-home-welcome-main-form-fieldset psApp-fieldset-rut">
+                    <label class="psApp-home-welcome-main-form-fieldset-label" for="welcomeForm-rut">Rut</label>
+                    <input class="psApp-home-welcome-main-form-fieldset-inputRut wrong"type="text" name="" id="welcomeForm-rut" placeholder="Ingrese RUT o correo">
+                    <span class="psApp-home-welcome-main-form-state wrong">Ingresa RUT válido</span>
+                </fieldset>
+                <!-- Welcome Form - Password -->
+                <fieldset class="psApp-home-welcome-main-form-fieldset psApp-fieldset-pass">
+                    <label class="psApp-home-welcome-main-form-fieldset-label" for="welcomeForm-pass">Contraseña <span>(Númerica de 4 dígitos)</span></label>
+                    <input class="psApp-home-welcome-main-form-fieldset-inputPass" id="welcomeForm-pass" type="password" minlength="4" maxlength="4" required placeholder="Ingrese contraseña">
+                    <i id="show-password" class="fa-regular fa-eye"></i> 
+                    <span class="psApp-home-welcome-main-form-state">Contraseña incorrecta</span>
+                </fieldset>
+                <!-- Welcome Form - Submit -->
+                <fieldset class="psApp-home-welcome-main-form-fieldset psApp-fieldset-sub">
+                    <input class="psApp-home-welcome-main-form-fieldset-inputSubmit" id="welcomeForm-submit" type="submit" value="Iniciar sesión">
+                    <button>¿Olvidaste tu contraseña?</button>
+                </fieldset>
+                <p></p>
+            </form>
+        </div>
+    </main>
+    <!-- Fin Main -->
+
+    <!-- Scripts  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="/assets/js/slick.min.js"></script>
+    <script type="text/javascript" src="/assets/js/script.js"></script>
+
+</body>
+
+</html>
